@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient navbar-dark">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <img src="./img/duck.png" alt="Logo" width="60px" class="d-inline-block align-text-top">
+                </div>
+            </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica utenti</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button"  aria-expanded="false">
+                  Storico prestiti
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+              <button type="button" class="btn btn-outline-light">Cerca</button>
+            </form>
+          </div>
+        </div>    
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col">
+                    <h2>Aggiungi libri</h2>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-lg ms-auto p-2">Aggiungi Libri</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                            <!--MAIN SECTION TABLE-->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th class="col-6" scope="col">Titolo</th>
+                        <th class="col" scope="col">Data Prestito</th>
+                        <th class="col" scope="col">Stato</th>
+                        <th class="col" scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Hary Potter</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span></td>
+                        <td>                            
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>
+                      <tr>
+                        <td>Giustizia Privata</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Loft</td>
+                        <td>16/12/2022</td>
+                        <td><span class="badge text-bg-warning">In prestito</span></td>
+                        <td>                            
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>
+                      <tr>
+                        <td>End Game</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>                            
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>  
+                        <tr>
+                            <td>Flash</td>
+                            <td>16/12/2022</td>
+                            <td><span class="badge text-bg-warning">In prestito</span></td>
+                            <td>                            
+                                <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                                <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                        </tr>
+                      <tr>
+                        <td>Geronimo Stilton</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>                            
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>
+                      <tr>
+                        <td>Gatto e il topo</td>
+                        <td>-</td>
+                        <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                        <td>                          
+
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>
+                      <tr>
+                        <td>Giustizia Privata 2</td>
+                        <td>-</td>
+                        <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                        <td>                            
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-plus-square"></i> </button></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+                <div class="col-4">
+                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Mi piace molto il blu</div>
+                        <div class="card-body text-primary">
+                          <h5 class="card-title">HO SCELTO IL BLU</h5>
+                          <p class="card-text">Ero molto indeciso sul colore da utilizzare, ma alla fine il blu ha vinto sul rosso SIUUM.</p>
+                        </div>
+                      </div>
+                      <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./img/duck.png" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">La miglior paperella del 2024</h5>
+                              <p class="card-text">Non credo realmente che sia la miglior paperella pero volevo provare ad inserire un'immagine in una card e ci sono riuscito. viva meee.</p>
+                              <p class="card-text"><small class="text-body-secondary">Ultimo aggiornamento alle 1:35am</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
