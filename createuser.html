@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Iscriviti</title>
+</head>
+
+<body>
+    <body class="bg-dark">
+        <nav class="navbar navbar-expand-lg bg-dark bg-gradient navbar-dark mb-5">
+            <div class="container-fluid">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <img src="./img/duck.png" alt="Logo" width="60px" class="d-inline-block align-text-top">
+                    </div>
+                </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lista prodotti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" role="button"  aria-expanded="false">
+                      Contatti
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>    
+        </nav>
+    <div class="container text-white">
+        <div class="title">
+            <h1>Crea il tuo account</h1>
+        </div>
+        <form class="row g-3" action="" method="">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Nome*</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="cognome" class="form-label">Cognome*</label>
+              <input type="text" name="surname" class="form-control" id="cognome" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email(opzionale)</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Example@mail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Indirizzo</label>
+              <input type="text" name="address" placeholder="Appartamento, negozio o locker..." class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Città</label>
+              <select name="city" id="inputState" class="form-select">
+                <option value="no-select" selected>-</option>
+                <option value="Roma">Roma</option>
+                <option value="Milano">Milano</option>
+                <option value="Napoli">Napoli</option>
+                <option value="Cagliari">Cagliari</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="cap" class="form-label">Cap</label>
+              <input type="number" class="form-control" id="cap">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Registrati</button>
+            </div>
+          </form>
+        </div>      
+</body>
+</html>

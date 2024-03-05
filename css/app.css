@@ -1,3 +1,9 @@
 img{
     max-width: 100%;
 }
+
+
+.form-login{
+    width: 500px;
+    margin: 0 auto;
+}
